@@ -1,0 +1,70 @@
+.sponsor-card {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    border: var(--pink) 2px solid;
+    font-size: 1em;
+    padding: 10px;
+    max-width: 1200px;
+    width: 90vw;
+    height: fit-content;
+    gap: 10px;
+    margin: auto;
+}
+
+.sponsor-display-name {
+    grid-column: 1;
+    color: var(--pink);
+}
+
+.sponsor-logo {
+    grid-column: 1;
+    width: 10em;
+    margin-left: 0;
+}
+
+.sponsor-desc {
+    grid-column: 1;
+}
+
+.sponsor-team-members {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sponsor-card button {
+    grid-column: 1;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    height: 2em;
+    width: 10em;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0;
+    box-shadow: 5px 7px 15px #00000048;
+
+}
+
+.sponsor-card button a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .sponsor-card {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
