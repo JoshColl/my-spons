@@ -9,21 +9,20 @@ export const SponsorCard = ({ sponsor }) => {
 
 	return (
 		<div className="sponsor-card">
-			<h3 className="sponsor-display-name">{sponsor.display_name} Partner</h3>
-				<img className="sponsor-logo" src={sponsor.logo_url} alt="logo" />
-			<p className="sponsor-desc">{sponsor.description}</p>
+			<h3>{sponsor.display_name} Partner</h3>
+			<img src={sponsor.logo_url} alt="logo" />
+			<p>{sponsor.description}</p>
 			<section className="sponsor-team-members">
 				{teamMembers.map((member, idx) =>
 					<TeamMember key={idx} member={member} />
 				)}
 			</section>
-				<button >
-					<a href={sponsor.website} target="_blank">
-						LEARN MORE
-						<img className='arrow-right' src={arrowRight} alt="img" />
-					</a>
-				</button>
-
+			<button >
+				<a href={sponsor.website} target="_blank">
+					LEARN MORE
+					<img src={arrowRight} alt="img" />
+				</a>
+			</button>
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ export function TeamMember({ member }) {
             <h4>{member.firstname} {member.lastname}</h4>
             <h5>{member.jobtitle}</h5>
             <a href={member.linkedin} target="_blank">
-                <img className='linkedin' src={linkedin} alt="img" />
+                <img src={linkedin} alt="img" />
             </a>
         </div>
     )
